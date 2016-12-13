@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ASHISH PRIYE</title>
+
+<script src="jquery-2.2.3.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#about1").click(function(){
+$("#about").toggle(1000);
+
+});
+
+$("#video1").click(function(){
+$("#video").toggle(1000);
+});
+
+$("#gallery1").click(function(){
+$("#gallery").toggle(1000);
+});
+
+$("#contact1").click(function(){
+$("#contact").toggle(1000);
+});
+
+$("#feedback1").click(function(){
+$("#feedback").toggle(1000);
+});
+
+
+
+});
+
+
+</script>
+
+
+<style type="text/css">
+body {
+width: 100%;
+margin: 0px;
+padding: 0px;
+font-family: Cambria;
+background-image: url("stars.jpg");
+background-repeat: y-repeat;
+background-position: center top;
+background-attachment : fixed;
+opacity : 1;
+}
+
+#about,#video,#gallery,#contact,#feedback
+{
+display : none;}
+
+.anim{
+position : fixed;
+}
+
+.animation
+{
+width : 50px;
+height : 50px;
+border-radius : 20px;
+position : relative;
+animation-name : example;
+animation-duration : 50s;
+animation-direction : alternate;
+animation-iteration-count : infinite;
+
+}
+
+@keyframes example
+{
+ 0% {left:0px; top:0px; }
+
+ 
+
+ 10% {left:1000px; top:0px;}
+20% {left:0px; top:500px;}
+30% {left:250px; top:0px;}
+40% {left:0px; top:500px;}
+
+50% {left:700px; top:500px;}
+60% {left:250px: top:500px;}
+70% {left:1000px; top:500px;}
+ 80%{left:0px; top:500px;}
+100% {left:0px; top:0px;}
+}
+
+.animation1
+{
+
+width : 50px;
+height : 50px;
+position : relative;
+animation-name : example1;
+animation-duration : 50s;
+animation-iteration-count : infinite;
+animation-direction : alternate;
+}
+
+@keyframes example1
+{
+0% {left:0px; top:50px; }
+
+ 
+
+ 10% {left:1200px; top:500px;}
+20% {left:200px; top:200px;}
+30% {left:800px; top:0px;}
+40% {left:0px; top:500px;}
+
+50% {left:700px; top:100px;}
+60% {left:100px: top:400px;}
+70% {left:1200px; top:50px;}
+ 80%{left:50px; top:500px;}
+100% {left:900px; top:100px;}
+}
+
+.animation2
+{
+position : relative;
+width : 50px;
+height : 50px;
+animation-name : example2;
+animation-duration : 70s;
+animation-direction : alternate;
+animation-iteration-count : infinite;
+}
+
+@keyframes example2
+{
+0% {left:0px; top:100px; }
+
+ 
+
+ 10% {left:500px; top:500px;}
+20% {left:900px; top:200px;}
+30% {left:200px; top:0px;}
+40% {left:0px; top:500px;}
+
+50% {left:700px; top:200px;}
+60% {left:1200px: top:100px;}
+70% {left:100px; top:500px;}
+ 80%{left:500px; top:250px;}
+100% {left:1200px; top:100px;}
+}
+
+.container {
+background-color: rgba(10,100,200,0.5);
+opacity : 0.9;
+width: 80%;
+min-width: 800px;
+margin : auto;
+margin-top : 0px;
+border: 2px;
+
+background-repeat: repeat;
+background-position: auto;
+
+}
+
+#image
+{
+width : 99%;
+height : 170px;
+
+}
+a
+{
+color : black;
+}
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.header  {
+	
+	width: 99.2%;
+	 	height : 400px;	
+margin-top : 0px;
+	
+
+}
+
+#image 
+{
+
+	margin-left: 19%;
+   margin-right : 25%;
+   
+  
+}
+.mySlides
+{
+display : none;
+}
+
+
+.headersec {
+width: 100%;
+
+height : 50px;
+
+}
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	margin-top: 150px;
+	
+	opacity: 0.8;
+	width: 100%;
+}
+
+#gototop
+{
+	background-color: white;
+      width : 15%;
+      height: 10%px;
+}
+
+#link{
+	
+	float: right;
+	margin-top: -55px;
+	font-size: 20px;
+}
+
+#home1:hover, #options:hover, #contacts:hover, #aboutme:hover, #gal:hover
+{
+background-color : white;
+font-size: 25px;
+font-weight: 20px;
+transition-delay : 0.1s;
+
+}
+
+.headersec #home,#aboutme,#options,#gal,#contacts,#i{
+	display: inline;
+	list-style-type: none;
+	margin-right: 15px;
+	
+	font-size: 20px;
+
+	border: .1em solid brown;
+	border-radius: 8px;
+	border-spacing: 5px;
+	background-color: rgba(250,250,250,0.5);
+}
+
+.headersec li ul {
+
+position: absolute;
+
+}
+
+#time
+{
+margin-top : -5.5%;
+}
+#link1 li {
+	display: none;
+}
+
+
+
+.left {
+	
+	height: auto;
+	min-height: 300px;
+	width: 20%;
+	float: left;
+	padding: 8px;
+	line-height: 20px;
+        
+	
+}
+
+#s, #u
+{
+list-style-type : none;
+}
+
+#s:hover, #u:hover
+{
+color : red;
+font-size : 20px;
+}
+
+
+
+#state,#union 
+{
+	display: none;
+	list-style-type: disc;
+}
+
+.right {
+	
+	width: 75%;
+	float: right;
+	padding: 8px;
+	height: auto;
+	min-height: 300px;
+	
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 5px;
+
+
+}
+#video{
+	margin-top: 60px;
+}
+
+.video1 
+{
+	border : 15px solid black;
+	margin-top : -60px;
+}
+
+
+
+#contact 
+{
+	clear : both;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	
+	width: 99.2%;
+	padding: 5px;
+}
+
+#idea
+{
+display : none;
+margin-top : 2%;
+margin-left : -7.6%;
+
+}
+
+#idea li
+{
+list-style-type: none;
+font-size: 20px;
+border: .1em solid brown;
+border-radius: 8px;
+border-spacing: 5px;
+background-color: rgba(250,250,250,0.5)
+}
+
+
+
+</style>
+
+<script>
+
+
+function start()
+{
+slideshow();
+startTime();
+}
+function startTime()
+ {
+ 	var d = new Date();
+ 	var h = d.getHours();
+ 	var m = d.getMinutes();
+ 	var s = d.getSeconds();
+ 	m = checkTime(m);
+ 	s = checkTime(s);
+
+ 	document.getElementById('time').innerHTML = d.toDateString() + "     " + h + ":" + m + ":" + s;
+ 	var i = setTimeout(startTime, 500);
+ }
+
+ function checkTime(i)
+ {
+ 	if(i<10)
+ 	{
+ 		i = "0" + i;
+ 	}
+ 	return i;
+ }
+
+
+var myIndex = 0;
+
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(slideshow, 2000);    
+}
+
+
+
+ function statelist() 
+ {
+ 	if(document.getElementById('state').style.display == "none")
+ 	{
+ 	document.getElementById('state').style.display = "block";
+        document.getElementById('h').innerHTML = "-Hobbies";
+    }
+    else
+    {
+    	document.getElementById('state').style.display = "none";
+        document.getElementById('h').innerHTML = "+Hobbies";
+    }
+ }
+
+
+ function unionlist()
+ {
+
+ 	if(document.getElementById('union').style.display == "none")
+ 	{
+ 	document.getElementById('union').style.display = "block";
+        document.getElementById('in').innerHTML = "-Interests";
+    }
+    else
+    {
+    	document.getElementById('union').style.display = "none";
+        document.getElementById('in').innerHTML = "+Interests";
+    }
+ }
+
+ 
+
+ function largeimage6()
+ {
+ 	var a=document.getElementById('image6');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage6()
+ {
+ 	var a=document.getElementById('image6');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+ function largeimage7()
+ {
+ 	var a=document.getElementById('image7');
+ 	var b=document.getElementById('image6');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage7()
+ {
+ 	var a=document.getElementById('image7');
+ 	var b=document.getElementById('image6');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+ function largeimage8()
+ {
+ 	var a=document.getElementById('image8');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image6');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage8()
+ {
+ 	var a=document.getElementById('image8');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image6');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+ function largeimage9()
+ {
+ 	var a=document.getElementById('image9');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image6');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage9()
+ {
+ 	var a=document.getElementById('image9');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image6');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+ function largeimage10()
+ {
+ 	var a=document.getElementById('image10');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image6');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage10()
+ {
+ 	var a=document.getElementById('image10');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image6');
+ 	var f=document.getElementById('image11');
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+function largeimage11()
+ {
+ 	var a=document.getElementById('image11');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image6');
+ 	b.style.display = "none";
+ 	c.style.display = "none";
+ 	d.style.display = "none";
+ 	e.style.display = "none";
+ 	f.style.display = "none";
+
+ 	a.style.width = "600px";
+ 	a.style.height = "600px";
+ 	
+ 	
+ }
+
+function smallimage11()
+ {
+ 	var a=document.getElementById('image11');
+ 	var b=document.getElementById('image7');
+ 	var c=document.getElementById('image8');
+ 	var d=document.getElementById('image9');
+ 	var e=document.getElementById('image10');
+ 	var f=document.getElementById('image6');
+
+ 	b.style.display = "inline-block";
+ 	c.style.display = "inline-block";
+ 	d.style.display = "inline-block";
+ 	e.style.display = "inline-block";
+ 	f.style.display = "inline-block";
+
+ 	a.style.width = "30%";
+ 	a.style.height = "250px";
+ 	
+ 	
+ }
+
+function validate()
+{
+var name = document.getElementById('username');
+
+name.pattern = "[^0-9]{1,15}";
+
+name.title = "Name should contain only lowercase letters and max 15 characters" ;
+
+
+}
+
+function ideas()
+{
+var a = document.getElementById('idea');
+a.style.display = "inline-block";
+
+}
+
+function ideas1()
+{
+var a = document.getElementById('idea');
+a.style.display = "none";
+}
+
+</script>
+
+
+
+</head>
+
+<body onload="start()">
+
+
+<div class="anim">
+
+<div class="animation"><img src="rocket.png" width=100px height=100px /></div>
+<div class="animation1"><img src="rocket.png" width=100px height=100px /></div>
+<div class="animation2"><img src="rocket.png" width=100px height=100px /></div>
+
+</div>
+
+
+
+<div class="container" id="container">
+	
+<div class="header">
+
+	<div id="image">
+	
+	<img src="image9.jpg" id="image1" class="mySlides"  width = 650px height = 350px/>
+	<img src="image10.jpg" id="image1" class="mySlides"  width = 650px height = 350px/>
+	<img src="image11.jpg" id="image1" class="mySlides" width = 650px height = 350px />
+<img src="image1.jpg" id="image1" class="mySlides" width = 650px height = 350px/>
+	<img src="image2.jpg" id="image1" class="mySlides"  width = 650px height = 350px/>
+        </div>
+
+	<div class="title">
+	<h2 id="title"><b>ASHISH PRIYE</b></h2>
+        </div>
+
+</div>
+
+
+
+<div class="headersec" id="headersec">
+    
+    <ul>
+        <li id="home"><a href="one" id="home1">Home</a></li>
+         <li id="aboutme"><a href="#about">About Me</a></li>
+        <li id="options"><a href="#video">Multimedia</a></li>
+
+        <li id="gal"><a href="http://localhost:8080/WebApplication6/form_authentication.jsp">Check Out</a></li>
+
+        <li id="contacts"><a href="http://localhost:8080/WebApplication6/index.html" >Sign Up</a></li>
+        <li  id="i"><a href="C:\Users\ASHISH\Documents\WebApplication2\web\xmldoc.xml">Hobbies</a>
+              </li>
+ <li id="contacts"><a href="http://localhost:8080/WebApplication6/newXMLDocument.xml" >Books</a></li>
+        
+    </ul>
+    <div id="link">
+    	<b><p id="time"></p></b>
+    </div>
+    
+</div>
+
+
+<div class="left">
+	<ul>
+		<li onclick="statelist()" id="s"><h2 id="h">+Hobbies</h2></li>
+		<ul id="state">
+			<li>Playing Cricket</li>
+			<li>Listening Songs</li>
+			<li>Hanging out with Friends</li>
+			<li>Reading Books</li>
+		</ul>
+		<hr>
+		<li onclick="unionlist()" id="u"><h2 id="in">+Interests</h2></li>
+        <ul id="union">
+        	<li>Data Communication</li>
+        	<li>Video Editing</li>
+        	<li>Networking</li>
+<li>Android App Development</li>
+<li>Web Development</li>
+<li>Astronomy</li>
+        </ul>
+		<hr>
+</div>
+
+
+<div class="right" id="right">
+<h2 id="about1"><u>Know About Me</u></h2>
+	<div id="about">
+		
+	<p><b>Hello!</b> Myself <b>ASHISH PRIYE.</b> I'm 20 years old, pursing B-TECH second year from <b>VELLORE INSTITUTE of TECHNOLOGY.</b> I'm basically from <b>Bihar</b> but as my father was in army so i travelled across the whole country. I have visited some beautiful places like Shimla,Darjeeling,Kashmir etc. In my family, apart from mother and father i have an elder sister. My father is in Police presently.</p> <p> I love doing things which are not that simple. i love accepting challenges. It keeps me going. I beleive, along with mental fitness we should be phsiaclly fit too. Apart from all these you can know my <b>Hobbies</b> and <b>Interest</b> which has been <em>listed on left</em>. i love <i>Networking</i>. I have been studying it since last year, I think networking has a way large scope which still needs to be covered. i also do coding, know <b>C,C++,JAVA,HTML,CSS,JAVASCRIP</b>T and a little bit of <b>PHP</b>. </p>
+	
+	<div id="gototop">
+         <a href="#container">Go To Top ^</a>
+	</div>
+</div>
+
+
+
+
+
+
+
+<h2 id="video1"><u>Do Check My Favourite Videos and Songs</u></h2>
+
+<div id="video">
+<video id="video1" width=600px height=500px controls>
+           <source src="waving-flag.mp4" type="video/mp4">
+	</video><br>
+	<video id="video1" width=600px height=500px controls>
+           <source src="my video.mp4" type="video/mp4">
+	</video><br>
+	
+	<br><br><br>
+
+	Songs:<br>
+	AKON-Beautiful<br><audio id="audio1" controls>
+           <source src="song1.mp3" type="audio/mpeg">
+	</audio><br>
+	KESHA-tik tok<br><audio id="audio2" controls>
+           <source src="tik-tok.mp3" type="audio/mpeg">
+	</audio><br><br>
+	<div id="gototop">
+         <a href="#container">Go To Top ^</a>
+	</div>
+	<br><br><br>
+</div>
+
+
+<h2 id="gallery1"><u>Some Wonderfull Memories</u></h2>
+<div id="gallery">
+
+<img src="image6.jpg" onmouseover="largeimage6()" onmouseout="smallimage6()" id="image6" width=30% height=250px />
+	<img src="image7.jpg" onmouseover="largeimage7()" onmouseout="smallimage7()" id="image7" width=30% height=250px />
+	<img src="image8.jpg" onmouseover="largeimage8()" onmouseout="smallimage8()" id="image8" width=30% height=250px />
+	<img src="image9.jpg" onmouseover="largeimage9()" onmouseout="smallimage9()" id="image9" width=30% height=250px />
+	<img src="image10.jpg" onmouseover="largeimage10()" onmouseout="smallimage10()" id="image10" width=30% height=250px />
+	<img src="image11.jpg" onmouseover="largeimage11()" onmouseout="smallimage11()" id="image11" width=30% height=250px />
+	
+
+<br>
+<div id="gototop">
+         <a href="#container">Go To Top ^</a>
+	</div><br><br><br>
+</div>
+
+
+
+<h2 id="contact1"><u>Will Be Waiting To Hear From You :)</u></h2>
+<div class="contact" id="contact">
+
+<a href="www.facebook.com/ashishpriye"><img src="facebook.png" width=50px height=50px /><b>ashishpriye/facebook.com</b></a><br>
+<img src="gmail.jpg" width=50px height=50px /><b>ashishpriye76@gmail.com</b><br>
+<img src="gmail.jpg" width=50px height=50px /><b>ashish.priye2014@vit.ac.in</b><br>
+<img src="mobile.jpg" width=50px height=50px /><b>9655842172</b><br><br>
+
+</div>
+
+
+<h2 id="feedback1"><u>Your OPINION is my MEDICINE(Feedback)</u></h2><br>
+<div class="feedback" id="feedback">
+
+<center>
+<form id="feed" action="index.php" method="POST">
+NAME:
+<input id="username" type="text" name="name"  />
+<br><br><br>
+GENDER:
+<input type="radio" name="gender" value="male" />Male
+<input type="radio" name="gender" value="female" checked/>Female
+<input type="radio" name="gender" value="transgender" />Transgender<br><br><br>
+OPINION:
+<input type="textfield" name="opinion" rows=30 cols=30 /><br><br><br>
+
+<button onclick="validate()">SUBMIT</button>
+
+</form>
+
+</center>
+
+</div>
+</div>
+<div class="footer">
+	copyright@<b>ashishpriye</b>
+</div>
+</div>
+
+
+
+
+
+</body>	
+</html>
+
+
